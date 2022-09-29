@@ -1,8 +1,6 @@
 # README
 
 
-Extension of the RNA feedback repository. Here we investigate the effects of localized RNA production on condensate properties.
-=======
 This code is associated with the following [preprint](https://doi.org/10.1101/2022.09.19.508534) titled "Organization and regulation of nuclear condensates by gene activity".
 
 Here we investigate the effects of localized RNA production on condensate properties.
@@ -23,7 +21,7 @@ Here we investigate the effects of localized RNA production on condensate proper
 
 `pip install imageio` (this is for unoptimized GIF files)
 
-For simulations with circular meshes, one must install Gmsh (http://gmsh.info/). wget the appropriate OS and put the executable found in /bin/gmsh into the bin of the environment that you are using.
+For simulations with circular meshes, one must install Gmsh (http://gmsh.info/). wget the appropriate OS and put the executable found in /bin/gmsh into the bin of the environment that you are using. This code has been tested on linux flavored OS and should install in a few minutes.
 
 ### Documentation
 
