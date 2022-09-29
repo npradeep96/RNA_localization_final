@@ -90,13 +90,5 @@ ratio,20
 distribution,0
 coordinates,[(0,0)]
 std,[2]
-p,2.0
-chi_ps,0.75
-chi_rs,0.0
-r,40.0
-
-distribution,0
-coordinates,[(5,0),(-5,0)]
-std,[8,8]
 localization_scale,1
 protein_nucleus_location,(0,0)
