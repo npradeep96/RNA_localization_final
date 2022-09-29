@@ -49,7 +49,7 @@ $param_file is the *only* optional input file & it contains a list of parameters
 
 ### Demo
 
-Example outputs upon running the phase field code using the parameter files in the directory `demo/Input/param_list.txt` are available in `demo/Output/`. The demo simulations can be run using the command
+Example outputs upon running the phase field code using the parameter files in the directory `demo/Input/` are available in `demo/Output/`. The demo simulations can be run using the command
 
 `python phase_field --i demo/Input/input_parameters.txt --o demo/Output/ --p demo/Input/param_list.txt`
 
