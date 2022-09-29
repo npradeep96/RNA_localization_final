@@ -14,8 +14,6 @@ circ_flag,1
 #   Define size of grid (nx=number of cells per dimension), dx = length of cell
 nx,150.0
 dx,0.4
-nx,300.0
-dx,0.2
 
 #   These represent the concentrations of coexistence for protein alone
 #   If Flory-Huggins potential is employed, they have to be symmetric about 0.5
@@ -24,7 +22,6 @@ c_beta,0.7
 
 #   Define initial concentrations of the protein & RNA and nucleus size
 phi_p_0,0.12
-phi_p_0,0.13
 phi_r_0,0.0
 nucleus_size,4.0
 
@@ -48,8 +45,6 @@ tolerance,1e-6
 total_steps,15000
 checkpoint,150
 text_log,150
-checkpoint,500
-text_log,500
 duration,8000.0
 
 #   Define the parameters that dictate reaction kinetics
@@ -58,7 +53,6 @@ duration,8000.0
 #   threshold will ensure production only at phi_p>=threshold values
 #   m1 will provide the value of the reaction order of protein in RNA synthesis
 k_production,10.0
-k_production,[10.,10.]
 k_degradation,0.5
 m1,1.0
 multiplier,1.0
