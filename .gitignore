@@ -1,0 +1,3 @@
+notebooks/
+submit_job.sh
+fipy test.ipynb

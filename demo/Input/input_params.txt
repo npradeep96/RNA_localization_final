@@ -1,0 +1,117 @@
+#   Initialization parameters
+#   This line will not be read & similarly blank lines
+
+#   Flag/variable simulation parameters with conditions
+#   if 3D, right now there is no spherical mesh implemented
+#   plot_flag is for generating images (PNG  format)
+#   if svg_flag is 1 - SVG images are generated and PNGS are rmd
+#   circ_flag is for a circular mesh
+dimension,2
+plot_flag,0
+svg_flag,0
+circ_flag,1
+
+#   Define size of grid (nx=number of cells per dimension), dx = lenght of cell
+<<<<<<< HEAD
+nx,150.0
+dx,0.4
+=======
+nx,300.0
+dx,0.2
+>>>>>>> 3de43f22e5c4a89842ef56089ab3e4f3f93bd27f
+
+#   These represent the concentrations of coexistence for protein alone
+#   If Flory-Huggins potential is employed, they have to be symmetric about 0.5
+c_alpha,0.1
+c_beta,0.7
+
+#   Define initial concentrations of the protein & RNA and nucleus size
+<<<<<<< HEAD
+phi_p_0,0.12
+=======
+phi_p_0,0.13
+>>>>>>> 3de43f22e5c4a89842ef56089ab3e4f3f93bd27f
+phi_r_0,0.0
+nucleus_size,4.0
+
+#   Noise strength
+noise_strength,0.0
+
+#   Mobility of protein and RNA
+M_protein,1.0
+M_rna,1.0
+
+#   Simulation parametersi
+#   dt is initial step size
+#   dt_max & min are maximum/minimum step sizes that are allowed
+#   tolerance is the residual below which simulation stops
+#   total_steps/duration are number of simulation steps/time to run (whichever occurs first)
+#   checkpoint is frequency of logging simulation data
+dt,1e-4
+dt_max,5e-1
+dt_min,1e-8
+tolerance,1e-6
+total_steps,15000
+<<<<<<< HEAD
+checkpoint,150
+text_log,150
+=======
+checkpoint,500
+text_log,500
+>>>>>>> 3de43f22e5c4a89842ef56089ab3e4f3f93bd27f
+duration,8000.0
+
+#   Define the parameters that dictate reaction kinetics
+#   if multiplier is specified, so must be t_change. Then after t_change
+#   has passed, the simulation will multiply k_production by multiplier
+#   threshold will ensure production only at phi_p>=threshold values
+#   m1 will provide the value of the reaction order of protein in RNA synthesis
+<<<<<<< HEAD
+k_production,10.0
+=======
+k_production,[10.,10.]
+>>>>>>> 3de43f22e5c4a89842ef56089ab3e4f3f93bd27f
+k_degradation,0.5
+m1,1.0
+multiplier,1.0
+t_change,0
+threshold,0.0
+kp_noise,0.0
+
+#   Sets up free-energy related terms
+#   fh is a flag for employing Flory-Huggins instead of double-well
+#   changing_chi ==2 uses the gaussian form & 1 == uses double-well LG expression
+#   changing_chi ==0 is not changing_chi and there for backwards compatability
+#   rho_s/rho_r is height of double-well potential for protein/RNA respectively
+#   kappa is surface tension parameter for protein, default = 0.5
+#   chi is value of pairwise interaction
+#   a,b,c are values of landau-ginzburg like three-way interaction & four way interactions
+#   mu_r chooses whether you use D-R (mu_r=0) or chemical potential fo RNA (mu_r=1)
+fh,0
+mu_r,0
+changing_chi,1.0
+rho_s,1.0
+rho_r,10.0
+kappa,0.5
+chi,1.0
+a,0.0
+b,0.0
+c,10.0
+ratio,20
+<<<<<<< HEAD
+
+distribution,0
+coordinates,[(0,0)]
+std,[2]
+=======
+p,2.0
+chi_ps,0.75
+chi_rs,0.0
+r,40.0
+
+distribution,0
+coordinates,[(5,0),(-5,0)]
+std,[8,8]
+>>>>>>> 3de43f22e5c4a89842ef56089ab3e4f3f93bd27f
+localization_scale,1
+protein_nucleus_location,(0,0)
